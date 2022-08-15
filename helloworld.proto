@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package hello.app;
+
+option php_generic_services = true;
+
+
+service Hello{
+
+  rpc say(Request) returns (Response);
+}
+
+message Request{
+  string  query = 1;
+}
+
+message Response{
+  string  output = 1;
+}

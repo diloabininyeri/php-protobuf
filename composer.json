@@ -1,0 +1,28 @@
+{
+  "name": "vendor_name/untitled6",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "zeus",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hello\\": "Hello",
+      "GPBMetadata\\": "GPBMetadata",
+      "Services\\": "Services"
+    }
+  },
+  "require": {
+    "ext-grpc": "*",
+    "ext-protobuf": "*",
+    "grpc/grpc": "^1.42",
+    "google/protobuf": "^3.21"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  }
+}
